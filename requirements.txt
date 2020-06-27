@@ -1,0 +1,10 @@
+gunicorn==19.9.0
+requests==2.20.0
+alpha_vantage
+pandas
+bokeh == 0.12.16
+dill
+flask
+jinja2
+pip
+simplejson

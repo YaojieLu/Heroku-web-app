@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="12-Day Program Milestone Project">
+    <meta name="Yaojie Lu" content="@gotoariel">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Milestone Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+
+      .cyan-background {
+        background-color:lightcyan;
+      }
+      [type="text"] {
+        margin: 15px 0px 15px 5px;
+      }
+
+      button {
+        margin: 5px 0px 15px 45px;
+        background-color:ivory;
+      }
+      button:hover {
+        color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Stock Information Lookup</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="https://www.thedataincubator.com/12day.html">12-day</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+      </nav>
+      
+      <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+          <h2>Stock Information Lookup</h2>
+      </div><!--title and description-->
+      
+	  <div class="row">
+		<div class="col-sm-3"></div>
+			<div class="col-sm-3 well cyan-background">
+				<form id='inputForm' method='post' action='graph'>
+					<div class="form-group">
+						<label for = "stockName"><strong>Ticker Symbol:</strong></label>
+						<input type="text" id="stockName" class="form-control" name="ticker" placeholder="GOOG" required>
+					</div>
+					
+					<div class="radio">
+						<label for = "Price"><input id="Price" type= "radio" name="plottype" value="Price" > Price</label>
+					</div>
+					<div class="radio">
+						<label for = "Volume"><input id="Volume" type= "radio" name="plottype" value="Volume"> Volume</label>
+					</div>
+						
+					<button type="submit">Submit</button>
+				</form>
+			</div> <!--ticker selection-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
